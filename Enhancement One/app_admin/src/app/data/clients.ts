@@ -1,0 +1,42 @@
+export const clients = [
+  {
+    "id": "C001",
+    "name": "John Smith",
+    "dob": "1985-06-15",
+    "address": "123 Maple Street, Springfield, IL",
+    "accountType": "retirement",
+    "email": "john.smith@example.com"
+  },
+  {
+    "id": "C002",
+    "name": "Emily Johnson",
+    "dob": "1990-09-22",
+    "address": "456 Oak Avenue, Denver, CO",
+    "accountType": "brokerage",
+    "email": "emily.johnson@example.com"
+  },
+  {
+    "id": "C003",
+    "name": "Michael Brown",
+    "dob": "1978-12-05",
+    "address": "789 Pine Road, Austin, TX",
+    "accountType": "retirement",
+    "email": "michael.brown@example.com"
+  },
+  {
+    "id": "C004",
+    "name": "Sarah Davis",
+    "dob": "1995-03-10",
+    "address": "321 Birch Lane, Miami, FL",
+    "accountType": "brokerage",
+    "email": "sarah.davis@example.com"
+  },
+  {
+    "id": "C005",
+    "name": "David Wilson",
+    "dob": "1982-11-30",
+    "address": "654 Cedar Street, Seattle, WA",
+    "accountType": "retirement",
+    "email": "david.wilson@example.com"
+  }
+]

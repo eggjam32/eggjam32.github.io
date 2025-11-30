@@ -1,0 +1,13 @@
+/* Grid container for cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between cards */
+  margin: 20px;
+}
+
+/* Optional: center content if few cards */
+.row::after {
+  content: '';
+  flex: auto;
+}

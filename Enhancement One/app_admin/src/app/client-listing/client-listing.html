@@ -1,0 +1,9 @@
+<!-- <pre>{{clients | json}}</pre> -->
+ <div *ngIf="isLoggedIn()">
+    <button (click)="addClient()" class="btn btn-info">Add Client</button>
+ </div>
+<div class="row">
+    <div *ngFor="let client of clients" class="col-md-4">
+        <app-client-card [client]="client" class="card-deck mt-2"></app-client-card>
+    </div>
+</div>
