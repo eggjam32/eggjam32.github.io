@@ -1,0 +1,267 @@
+
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <set>
+
+using namespace std;
+
+// Struct to represent a course
+struct Course {
+    string courseNumber;
+    string courseName;
+    vector<string> prerequisites;
+
+    Course(string num, string name) : courseNumber(num), courseName(name) {}
+
+    bool operator<(const Course& other) const {
+        return courseNumber < other.courseNumber;
+    }
+};
+
+// Node structure for the Binary Search Tree (BST)
+struct Node {
+    Course course;
+    Node* left;
+    Node* right;
+
+    Node(const Course& c) : course(c), left(nullptr), right(nullptr) {}
+};
+
+// BST class to manage the courses
+class CourseTree {
+public:
+    Node* root;
+
+    CourseTree() : root(nullptr) {}
+
+    void insert(const Course& course) {
+        insert(root, course);
+    }
+
+    Node* search(const string& courseNumber) {
+        return search(root, courseNumber);
+    }
+
+    bool courseExists(const string& courseNumber) {
+        return search(courseNumber) != nullptr;
+    }
+
+    void inorderPrint() {
+        inorderPrint(root);
+    }
+
+private:
+    void insert(Node*& node, const Course& course) {
+        if (node == nullptr) {
+            node = new Node(course);
+        }
+        else if (course < node->course) {
+            insert(node->left, course);
+        }
+        else {
+            insert(node->right, course);
+        }
+    }
+
+    Node* search(Node* node, const string& courseNumber) {
+        if (node == nullptr || node->course.courseNumber == courseNumber) {
+            return node;
+        }
+
+        if (courseNumber < node->course.courseNumber) {
+            return search(node->left, courseNumber);
+        }
+
+        return search(node->right, courseNumber);
+    }
+
+    void inorderPrint(Node* node) {
+        if (node != nullptr) {
+            inorderPrint(node->left);
+            cout << "Course Number: " << node->course.courseNumber
+                << ", Course Name: " << node->course.courseName << endl;
+
+            if (node->course.prerequisites.empty()) {
+                cout << "No prerequisites" << endl;
+            }
+            else {
+                cout << "Prerequisites: ";
+                for (const string& prereq : node->course.prerequisites) {
+                    cout << prereq << " ";
+                }
+                cout << endl;
+            }
+
+            inorderPrint(node->right);
+        }
+    }
+};
+
+// Function to load data into the BST from a file
+bool loadDataIntoTree(CourseTree& courseTree, const string& filename) {
+    ifstream file(filename);
+    string line;
+
+    if (!file.is_open()) {
+        cout << "Error: Unable to open file." << endl;
+        return false;
+    }
+
+    while (getline(file, line)) {
+        stringstream ss(line);
+        vector<string> tokens;
+        string token;
+
+        // Split the line by commas
+        while (getline(ss, token, ',')) {
+            tokens.push_back(token);
+        }
+
+        // Error handling for incorrect format
+        if (tokens.size() < 2) {
+            cout << "Error: Invalid format in line: " << line << endl;
+            continue;
+        }
+
+        string courseNumber = tokens[0];
+        string courseName = tokens[1];
+        vector<string> prerequisites(tokens.begin() + 2, tokens.end());
+
+        // Create a new course and insert it into the tree
+        Course newCourse(courseNumber, courseName);
+        newCourse.prerequisites = prerequisites;
+
+        courseTree.insert(newCourse);
+    }
+
+    file.close();
+    return true;
+}
+
+// Function to validate the course file
+bool validateFile(CourseTree& courseTree, const string& filename) {
+    ifstream file(filename);
+    string line;
+
+    if (!file.is_open()) {
+        cout << "Error: Unable to open file." << endl;
+        return false;
+    }
+
+    while (getline(file, line)) {
+        stringstream ss(line);
+        vector<string> tokens;
+        string token;
+
+        // Split the line by commas
+        while (getline(ss, token, ',')) {
+            tokens.push_back(token);
+        }
+
+        // Error handling for incorrect format
+        if (tokens.size() < 2) {
+            cout << "Error: Invalid format in line: " << line << endl;
+            return false;
+        }
+
+        string courseNumber = tokens[0];
+        vector<string> prerequisites(tokens.begin() + 2, tokens.end());
+
+        // Check if all prerequisites exist
+        for (const string& prereq : prerequisites) {
+            if (!courseTree.courseExists(prereq)) {
+                cout << "Error: Prerequisite " << prereq << " does not exist for course " << courseNumber << endl;
+                return false;
+            }
+        }
+    }
+
+    file.close();
+    return true;
+}
+
+// Function to search and print a specific course
+void searchAndPrintCourse(CourseTree& courseTree, const string& courseNumber) {
+    Node* courseNode = courseTree.search(courseNumber);
+    if (courseNode != nullptr) {
+        cout << "Course Number: " << courseNode->course.courseNumber
+            << ", Course Name: " << courseNode->course.courseName << endl;
+
+        if (courseNode->course.prerequisites.empty()) {
+            cout << "No prerequisites" << endl;
+        }
+        else {
+            cout << "Prerequisites: ";
+            for (const string& prereq : courseNode->course.prerequisites) {
+                cout << prereq << " ";
+            }
+            cout << endl;
+        }
+    }
+    else {
+        cout << "Course not found." << endl;
+    }
+}
+
+// Function to display the menu
+void displayMenu() {
+    cout << "\nMenu:\n";
+    cout << "1. Load file data into data structure\n";
+    cout << "2. Print all courses in alphanumeric order\n";
+    cout << "3. Print a course's title and prerequisites\n";
+    cout << "9. Exit\n";
+    cout << "Enter your choice: ";
+}
+
+// Function for menu options
+void handleMenuOption(int option, CourseTree& courseTree, const string& filename) {
+    switch (option) {
+    case 1:
+        if (loadDataIntoTree(courseTree, filename)) {
+            cout << "File data loaded successfully." << endl;
+        }
+        else {
+            cout << "Error loading file data." << endl;
+        }
+        break;
+
+    case 2:
+        courseTree.inorderPrint();
+        break;
+
+    case 3:
+    {
+        string courseNumber;
+        cout << "Enter course number: ";
+        cin >> courseNumber;
+        searchAndPrintCourse(courseTree, courseNumber);
+    }
+    break;
+
+    case 9:
+        cout << "Exiting program." << endl;
+        break;
+
+    default:
+        cout << "Invalid option. Please try again." << endl;
+        break;
+    }
+}
+
+int main() {
+    CourseTree courseTree;
+    string filename = "CS 300 ABCU_Advising_Program_Input.csv";
+
+    int option;
+    do {
+        displayMenu();
+        cin >> option;
+        handleMenuOption(option, courseTree, filename);
+    } while (option != 9);
+
+    return 0;
+}
