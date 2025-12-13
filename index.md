@@ -1,12 +1,16 @@
 # Welcome to Emeth Jamison's ePortfolio!
 
-
 ## Links
+- [Professional Self-Assessment](#professional-self-assessment)
 - [Code Review](#code-review)
+- [Enhancement One – Software Design and Engineering](#enhancement-one--software-design-and-engineering)
+- [Enhancement Two – Data Structures and Algorithms](#enhancement-two--data-structures-and-algorithms)
+- [Enhancement Three – Databases](#enhancement-three--databases)
+- [Course Outcomes](#course-outcomes)
 
 ---
 
-# Professional Self-Assessment
+## Professional Self-Assessment
 Throughout the Computer Science program at SNHU, completing the coursework and developing my ePortfolio have significantly aided me in preparing me for employment and in developing my professional goals and values. Upon entering the program, my intention was to gain the knowledge and skills to become a software engineer. Now that I am exiting the program, I can confidently say that I feel prepared to do so. Along the way, I have learned so much about computer science, mathematics, algorithms, communication, project management, and much more. The value that encompasses all areas is integrity. Software engineers, or anyone in the technology sector for that matter, have an obligation to put forward their best work without cutting corners. This value has been developed throughout this program and will always be the core of my work ethic. 
 
 In this program, I learned to collaborate in a team environment through the countless discussion boards and through the material from courses such as the CS-250 Software Development Lifecycle course and the CS-255 System Analysis and Design course. Such courses and materials helped me model different members of a team, such as product owner, project manager, and developer to gain a better understanding of collaboration from different perspectives. Along these lines, such classes afforded me the opportunity to practice communicating with stakeholders to determine requirements, check progress, and deliver desired products. Foundational mathematic classes such as MAT-230 Discrete Mathematics and MAT-350 Applied Linear Algebra provided a foundation for understanding how algorithms work. In tandem with programming classes, these classes developed my knowledge of data structures and algorithms, not to mention CS-300 DSA: Analysis and Design, a class in which we thoroughly analyzed and developed different data structures and algorithms. Software engineering and database knowledge were developed in database classes like DAD-220 and CS-465. In these classes we learned database foundations like the SQL language and how to develop full stack applications that communicated data from an external database to a well-designed front end web application. Throughout each of these categories, security remained a foreground concept. Including robust security in all levels of programming became second nature and in classes like CS-405 Secure Coding, we learned why the vulnerabilities of poor security development were so detrimental; from an application standpoint and a life-saving standpoint. Ultimately, all of these skills work together and support me in my career aspirations. 
@@ -15,7 +19,7 @@ The artifacts I chose to complete the enhancements in this portfolio demonstrate
 
 ---
 
-# Code Review
+## Code Review
 
 This page contains my Milestone One Code Review video for the SNHU ePortfolio.  
 I have incorporated instructor feedback and improved clarity, formatting, and overall structure.
@@ -25,7 +29,7 @@ I have incorporated instructor feedback and improved clarity, formatting, and ov
 
 ---
 
-# Enhancement One - Software Design and Engineering
+## Enhancement One - Software Design and Engineering
 
 The artifact I chose for the Software Engineering and Design category is the project for the class CS410 - Software Reverse Engineering. In Project One and Project Two, the requirements were to disassemble a binary file, interpret the assembly, write the corresponding C++ code, determine vulnerabilities, and fix the vulnerabilities that were fixable within the scope of the projects and class. The ultimate goal of these projects was to demonstrate an ability to reverse engineer legacy code for modern systems while addressing security concerns. For this category enhancement, I developed a full-stack application for the SNHU Investments investment banking application. This application, developed using a MEAN architecture, includes an Express page for client interaction, an Angular single-page administrator application, and a MongoDB database. This artifact is developed in tandem with the Databases category. I selected this artifact due to its potential to become a solid full-stack application that would allow me to demonstrate many computer science skills. I improved this artifact greatly by taking the essence of the low-level system in the binary file and creating a high level, multi-layered application to achieve the same goals much better. The app achieves all original requirements while functioning at a much higher level through the use of the Express and Angular site pages. The design document displays my ability to create an executive summary, to define project constraints, and to disassemble a binary file and explain the functionality. The full stack application demonstrates my ability to translate requirements into an application and to develop an application using the MEAN architecture. Ultimately, the artifact displays my ability to create full stack applications that are secure and functional.
 
@@ -43,7 +47,7 @@ Through the design document, I was able to demonstrate an ability to build a col
 As I created this artifact enhancement, I learned quite a few things. I learned mainly that skills from the past may not directly translate. Some of the full stack tools I had used in the past were not working the same as when I had learned them. I had to learn how to employ creative solutions and do research on how to fix issues in an application. That also reflects challenges I faced in learning as I went. I had to learn new ways to achieve goals which is ultimately a necessary skill in computer science.
 
 ---
-# Enhancement Two - Data Structures and Algorithms
+## Enhancement Two - Data Structures and Algorithms
 
 The artifact I selected for this enhancement is the CS300 DSA: Analysis and Design final project. In this project, the goal was to take information from a data file, perform a runtime analysis on three data structures, determine the most appropriate data structure to meet searching and sorting project requirements, and then develop the code using this data structure. For this project, I used a binary search tree algorithm in the C++ coding language to achieve this task. For the sake of this enhancement, I am assuming that the fictional university, ABCU University, wants the program to be translated into the Java programming language and for the searching and sorting algorithm used to be the fastest algorithm during runtime. Based on a runtime analysis, this is a vector-based searching and sorting algorithm. Therefore, to enhance this artifact, I created a Java-based vector-based searching and sorting algorithm to sort course data for the fictional university. I chose this artifact as it enables me to demonstrate many skills regarding data structures and algorithms as well as other computer science skills like translating between coding languages and runtime analysis.  
 
@@ -54,7 +58,7 @@ I had originally intended to meet course outcomes 2, 3, 4, and 5. Through the co
 This artifact afforded me the opportunity to learn how to translate data structures and algorithms between coding languages. The class I had taken was primarily in C++, so I learned how to create various algorithms using C++ data structures. Taking the time to translate to the equivalent Java data structures enhanced my knowledge of systems as a whole and gave me an opportunity to demonstrate a knowledge of computer science theory, not just a per-language memorization of certain algorithms. I faced the challenge of trying to find the course data dataset in my past files. Luckily, I was able to find this text file online. I did not face many challenges when developing the system as I knew what had to be done and executed this without errors presenting themselves. 
 
 ---
-# Enhancement Three - Databases
+## Enhancement Three - Databases
 The artifact I chose to meet the Databases category enhancement is the CS410 Software Reverse Engineering final project. In Project One and Project Two, the requirements were to disassemble a binary file, interpret the assembly, write the corresponding C++ code, determine vulnerabilities, and fix the vulnerabilities that were fixable within the scope of the projects and class. The goal of these projects was to demonstrate an ability to reverse engineer legacy code for modern systems while addressing security concerns. For this category enhancement, I developed a full-stack application with an external database for the SNHU Investments investment banking application. This application, developed using a MEAN architecture, includes an Express page for client interaction, an Angular single-page administrator application, and a MongoDB database. I selected this project to develop in tandem with the first category enhancement of software engineering and design. These go well together in a full-stack application and allowed me to demonstrate a wide range of skills and meet the category enhancements for both projects. In the original files, all client data in the system was hardcoded into the C++ application. All user credentials, like usernames and passwords, were hardcoded into the program as well. This created a severe security vulnerability in which hackers who gained access to the files could have quickly and easily identified user data and credentials allowing them to log in and steal data. Hardcoded credentials are a terrible security practice so my main goal with the database enhancement was to secure this data in the application using a database and other security practices like authentication, authorization, and encryption. I implemented these changes through the MongoDB database, encryption practices such as hashing, authorization measures like JWT tokens, and authentication measures through separately stored credentials. To prevent users from accessing admin privileges, each user is given a role and is directed upon logging in to the side of the application they are meant to interact with. Admin privileges include accessing and editing all user information. Client privileges are limited to viewing just their data. 
 
 # MongoDB Compass View 1
@@ -71,7 +75,7 @@ When developing the application, I ran into a few problems. I initially had to f
 
 ---
 
-# Course Outcomes
+## Course Outcomes
 # Outcome 1: Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science
 I employed strategies for building collaborative environments that enabled diverse audiences to support organizational decision making through all projects. Specifically, I created a detailed code review, developed thorough software design documentation, included comments directly within my code, and maintained journals of my progress for each enhancement. These strategies provided transparency and clarity, allowing team members with varying technical experience to understand every aspect of a given project. This approach facilitated collaboration and informed decision-making in a professional context, including setting project requirements, prioritizing updates, and coordinating enhancements. By structuring my work to be accessible and well-documented, I ensured that organizational decisions could be made efficiently and with input from diverse perspectives.
 
