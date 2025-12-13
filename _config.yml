@@ -3,6 +3,7 @@ title: Emeth Jamison
 
 exclude:
   - node_modules
+  - "**/node_modules"
   - README.md
   - package.json
   - package-lock.json
