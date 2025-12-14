@@ -1,4 +1,5 @@
 # Welcome to Emeth Jamison's ePortfolio!
+[![Profile picture](/Screenshots/profile_pic.jpg)](https://github.com/eggjam32)
 
 ## Links
 - [Professional Self-Assessment](#professional-self-assessment)
