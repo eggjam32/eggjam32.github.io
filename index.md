@@ -9,6 +9,7 @@
 ## Links
 - [Professional Self-Assessment](#professional-self-assessment)
 - [Code Review](#code-review)
+- [View Original Code Files](/Originals)
 - [Enhancement One – Software Design and Engineering](#enhancement-one-software-design-and-engineering)
 - [Enhancement Two – Data Structures and Algorithms](#enhancement-two-data-structures-and-algorithms)
 - [Enhancement Three – Databases](#enhancement-three-databases)
