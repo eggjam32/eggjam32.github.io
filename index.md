@@ -1,5 +1,5 @@
 # Welcome to Emeth Jamison's ePortfolio!
-[<img src="/Screenshots/profile_pic.jpg" alt="Profile" width="150" style='border-radius:50;'>](https://github.com/eggjam32)
+[<img src="/Screenshots/profile_pic.jpg" alt="Profile" width="150" style="border-radius:50 px;">](https://github.com/eggjam32)
 
 ## Links
 - [Professional Self-Assessment](#professional-self-assessment)
