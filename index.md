@@ -53,6 +53,7 @@ The artifact I selected for this enhancement is the CS300 DSA: Analysis and Desi
 
 ![Enhancement 2 - Vector](/Screenshots/Enhancement2_1.png)
 ![Enhancement 2 - BST](/Screenshots/Enhancement2_2.png)
+
 In the images above, I completed a runtime analysis of a vector-based searching and sorting algorithm and of a binary search tree-based algorithm, respectively. Through these analyses, I was able to determine that for small data sets, a vector-based algorithm would allow me to efficiently achieve the requirements of the project without compromising efficiency. With large datasets however, I determined that it would be much more efficient to use a binary search tree, but this was not necessary given the project requirements and scale.
 
 This artifact afforded me the opportunity to learn how to translate data structures and algorithms between coding languages. The class I had taken was primarily in C++, so I learned how to create various algorithms using C++ data structures. Taking the time to translate to the equivalent Java data structures enhanced my knowledge of systems as a whole and gave me an opportunity to demonstrate a knowledge of computer science theory, not just a per-language memorization of certain algorithms. I faced the challenge of trying to find the course data dataset in my past files. Luckily, I was able to find this text file online. I did not face many challenges when developing the system as I knew what had to be done and executed this without errors presenting themselves. 
