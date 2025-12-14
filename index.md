@@ -29,6 +29,12 @@ The following link contains the comprehensive code review for all three artifact
 
 ## Enhancement One: Software Design and Engineering
 
+<a class="github-btn"
+   href="https://github.com/eggjam32/eggjam32.github.io/tree/main/Enhancements%20One%20and%20Three"
+   target="_blank">
+  View Enhancement One Code
+</a>
+
 The artifact I chose for the Software Engineering and Design category is the project for the class CS410 - Software Reverse Engineering. In Project One and Project Two, the requirements were to disassemble a binary file, interpret the assembly, write the corresponding C++ code, determine vulnerabilities, and fix the vulnerabilities that were fixable within the scope of the projects and class. The ultimate goal of these projects was to demonstrate an ability to reverse engineer legacy code for modern systems while addressing security concerns. For this category enhancement, I developed a full-stack application for the SNHU Investments investment banking application. This application, developed using a MEAN architecture, includes an Express page for client interaction, an Angular single-page administrator application, and a MongoDB database. This artifact is developed in tandem with the Databases category. I selected this artifact due to its potential to become a solid full-stack application that would allow me to demonstrate many computer science skills. I improved this artifact greatly by taking the essence of the low-level system in the binary file and creating a high level, multi-layered application to achieve the same goals much better. The app achieves all original requirements while functioning at a much higher level through the use of the Express and Angular site pages. The design document displays my ability to create an executive summary, to define project constraints, and to disassemble a binary file and explain the functionality. The full stack application demonstrates my ability to translate requirements into an application and to develop an application using the MEAN architecture. Ultimately, the artifact displays my ability to create full stack applications that are secure and functional.
 
 # Login Screen
@@ -46,6 +52,11 @@ As I created this artifact enhancement, I learned quite a few things. I learned 
 
 ---
 ## Enhancement Two: Data Structures and Algorithms
+<a class="github-btn"
+   href="https://github.com/eggjam32/eggjam32.github.io/tree/main/Enhancement%20Two"
+   target="_blank">
+  View Enhancement Two Code
+</a>
 
 The artifact I selected for this enhancement is the CS300 DSA: Analysis and Design final project. In this project, the goal was to take information from a data file, perform a runtime analysis on three data structures, determine the most appropriate data structure to meet searching and sorting project requirements, and then develop the code using this data structure. For this project, I used a binary search tree algorithm in the C++ coding language to achieve this task. For the sake of this enhancement, I am assuming that the fictional university, ABCU University, wants the program to be translated into the Java programming language and for the searching and sorting algorithm used to be the fastest algorithm during runtime. Based on a runtime analysis, this is a vector-based searching and sorting algorithm. Therefore, to enhance this artifact, I created a Java-based vector-based searching and sorting algorithm to sort course data for the fictional university. I chose this artifact as it enables me to demonstrate many skills regarding data structures and algorithms as well as other computer science skills like translating between coding languages and runtime analysis.  
 
@@ -58,6 +69,12 @@ This artifact afforded me the opportunity to learn how to translate data structu
 
 ---
 ## Enhancement Three: Databases
+<a class="github-btn"
+   href="https://github.com/eggjam32/eggjam32.github.io/tree/main/Enhancements%20One%20and%20Three"
+   target="_blank">
+  View Enhancement Three Code
+</a>
+
 The artifact I chose to meet the Databases category enhancement is the CS410 Software Reverse Engineering final project. In Project One and Project Two, the requirements were to disassemble a binary file, interpret the assembly, write the corresponding C++ code, determine vulnerabilities, and fix the vulnerabilities that were fixable within the scope of the projects and class. The goal of these projects was to demonstrate an ability to reverse engineer legacy code for modern systems while addressing security concerns. For this category enhancement, I developed a full-stack application with an external database for the SNHU Investments investment banking application. This application, developed using a MEAN architecture, includes an Express page for client interaction, an Angular single-page administrator application, and a MongoDB database. I selected this project to develop in tandem with the first category enhancement of software engineering and design. These go well together in a full-stack application and allowed me to demonstrate a wide range of skills and meet the category enhancements for both projects. In the original files, all client data in the system was hardcoded into the C++ application. All user credentials, like usernames and passwords, were hardcoded into the program as well. This created a severe security vulnerability in which hackers who gained access to the files could have quickly and easily identified user data and credentials allowing them to log in and steal data. Hardcoded credentials are a terrible security practice so my main goal with the database enhancement was to secure this data in the application using a database and other security practices like authentication, authorization, and encryption. I implemented these changes through the MongoDB database, encryption practices such as hashing, authorization measures like JWT tokens, and authentication measures through separately stored credentials. To prevent users from accessing admin privileges, each user is given a role and is directed upon logging in to the side of the application they are meant to interact with. Admin privileges include accessing and editing all user information. Client privileges are limited to viewing just their data. 
 
 # MongoDB Compass View 1
