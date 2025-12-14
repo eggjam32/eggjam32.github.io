@@ -1,6 +1,6 @@
 theme: jekyll-theme-midnight
 title: Emeth Jamison
-profile_image: /assets/images/profile.jpg
+profile_image: /Screenshots/profile_pic.jpg
 
 exclude:
   - node_modules
