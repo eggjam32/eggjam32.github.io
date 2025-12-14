@@ -2,7 +2,7 @@
 <div style="text-align:center;">
   <a href="https://github.com/eggjam32">
     <img src="/Screenshots/profile_pic.jpg" alt="Profile" 
-         style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
+         style="width:150px; height:150px; border-radius:50%; object-fit:cover; border-width:3px; border-color: white;">
   </a>
 </div>
 
