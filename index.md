@@ -13,7 +13,6 @@
 - [Enhancement Two – Data Structures and Algorithms](#enhancement-two-data-structures-and-algorithms)
 - [Enhancement Three – Databases](#enhancement-three-databases)
 - [Course Outcomes](#course-outcomes)
-
 - <a class="github-btn"
    href="https://github.com/eggjam32/eggjam32.github.io/tree/main/Originals"
    target="_blank">
