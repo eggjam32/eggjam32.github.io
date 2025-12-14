@@ -19,12 +19,10 @@ The artifacts I chose to complete the enhancements in this portfolio demonstrate
 
 ---
 
-## Code Review
+## Code Review 
+The following link contains the comprehensive code review for all three artifact enhancements.
 
-This page contains my Milestone One Code Review video for the SNHU ePortfolio.  
-I have incorporated instructor feedback and improved clarity, formatting, and overall structure.
-
-## Video Link
+### Video Link
 [**Watch the Code Review Video**](https://youtu.be/xcGk4zeVBpA)
 
 ---
